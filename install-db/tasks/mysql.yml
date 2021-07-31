@@ -6,7 +6,6 @@
     - mariadb-server
     - mariadb
     - python3-devel
-    - mysql-devel
     - mariadb-connector-c.x86_64
     - mariadb-connector-odbc.x86_64
     - mariadb-devel.x86_64
