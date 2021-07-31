@@ -5,7 +5,13 @@
     packages:
     - mariadb-server
     - mariadb
-    - MySQL-python
+    - python-devel
+    - mysql-devel
+  when: ansible_facts['distribution'] == "CentOS"
+
+- name: Instalando o MYSQL-python
+  pip:
+    name: mysql-python
   when: ansible_facts['distribution'] == "CentOS"
 
 - name: Enable service Mysql, and not touch the state
