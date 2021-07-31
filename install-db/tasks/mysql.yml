@@ -5,7 +5,7 @@
     packages:
     - mariadb-server
     - mariadb
-    - python-devel
+    - python3-devel
     - mysql-devel
   when: ansible_facts['distribution'] == "CentOS"
 
