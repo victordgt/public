@@ -9,7 +9,7 @@
     - mariadb-connector-c.x86_64
     - mariadb-connector-odbc.x86_64
     - mariadb-devel.x86_64
-    - PyMySQL.noarch
+    - python3-PyMySQL.noarch
   when: ansible_facts['distribution'] == "CentOS"
 
 - name: Instalando o MYSQL-python
