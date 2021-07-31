@@ -11,7 +11,7 @@
 
 - name: Instalando o MYSQL-python
   pip:
-    name: mysql-python
+    name: mariadb
   when: ansible_facts['distribution'] == "CentOS"
 
 - name: Enable service Mysql, and not touch the state
