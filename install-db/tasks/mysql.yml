@@ -7,7 +7,7 @@
     - mariadb
     - python3-devel
     - mysql-devel
-    - libmariadb-dev
+    - mariadb-connector-c.x86_64
   when: ansible_facts['distribution'] == "CentOS"
 
 - name: Instalando o MYSQL-python
